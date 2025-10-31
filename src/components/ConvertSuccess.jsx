@@ -21,7 +21,7 @@ function ConvertSuccess({ user }) {
       <div
         className={`flex-1 flex flex-col transition-all duration-300 ${
           sidebarOpen ? "md:ml-70" : "ml-0"
-        }`} 
+        }`}
       >
         <header className="flex items-center justify-between px-6 py-4 bg-white shadow-sm sticky top-0 z-10">
           <h1 className="text-xl md:text-3xl font-bold text-gray-500 text-center md:text-left flex-1">
@@ -72,7 +72,7 @@ function ConvertSuccess({ user }) {
                   className="flex items-center gap-2 px-4 py-3 hover:bg-gray-100"
                 >
                   <img
-                    src="/src/assets/Icon (5).svg"
+                    src="/src/assets/Icon-5.svg"
                     className="w-5 h-5"
                     alt="Send Money"
                   />
@@ -103,7 +103,7 @@ function ConvertSuccess({ user }) {
 
                 <button className="flex items-center gap-2 px-4 py-3 hover:bg-gray-100">
                   <img
-                    src="/src/assets/file-05 (2).svg"
+                    src="/src/assets/file-05-2.svg"
                     className="w-5 h-5"
                     alt="Create Invoice"
                   />

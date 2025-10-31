@@ -32,10 +32,25 @@ function NewInvoicePage({ user }) {
   ];
 
   const currencies = [
-    { code: "USD", name: "US Dollar", symbol: "$", flag: "/src/assets/usd.svg" },
+    {
+      code: "USD",
+      name: "US Dollar",
+      symbol: "$",
+      flag: "/src/assets/usd.svg",
+    },
     { code: "EUR", name: "Euro", symbol: "€", flag: "/src/assets/eur.svg" },
-    { code: "GBP", name: "British Pound", symbol: "£", flag: "/src/assets/gbp.svg" },
-    { code: "NGN", name: "Nigerian Naira", symbol: "₦", flag: "/src/assets/ngn.svg" },
+    {
+      code: "GBP",
+      name: "British Pound",
+      symbol: "£",
+      flag: "/src/assets/gbp.svg",
+    },
+    {
+      code: "NGN",
+      name: "Nigerian Naira",
+      symbol: "₦",
+      flag: "/src/assets/ngn.svg",
+    },
   ];
 
   useEffect(() => {
@@ -73,7 +88,6 @@ function NewInvoicePage({ user }) {
           sidebarOpen ? "ml-0 md:ml-10" : "ml-0"
         }`}
       >
-
         <header className="flex items-center justify-between px-6 py-4 bg-white shadow-sm sticky top-0 z-10">
           <h1 className="text-xl md:text-3xl font-bold text-gray-500 text-center md:text-left flex-1">
             New Invoice
@@ -110,7 +124,9 @@ function NewInvoicePage({ user }) {
                 </h2>
 
                 <div>
-                  <label className="text-sm text-gray-500">Customer Name*</label>
+                  <label className="text-sm text-gray-500">
+                    Customer Name*
+                  </label>
                   <select
                     value={customerName}
                     onChange={(e) => setCustomerName(e.target.value)}
@@ -166,7 +182,9 @@ function NewInvoicePage({ user }) {
                   </div>
 
                   <div>
-                    <label className="text-sm text-gray-500">Invoice Due Date</label>
+                    <label className="text-sm text-gray-500">
+                      Invoice Due Date
+                    </label>
                     <div className="flex items-center gap-2 border border-gray-300 rounded-lg px-3 py-2 mt-2">
                       <Calendar className="text-gray-400 w-4 h-4" />
                       <input
@@ -183,7 +201,9 @@ function NewInvoicePage({ user }) {
 
             <div className="space-y-6">
               <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-5">
-                <h2 className="text-gray-700 font-semibold mb-4">Item Description</h2>
+                <h2 className="text-gray-700 font-semibold mb-4">
+                  Item Description
+                </h2>
 
                 <div className="space-y-4">
                   <div>
@@ -226,7 +246,9 @@ function NewInvoicePage({ user }) {
                   </div>
 
                   <div className="mt-6">
-                    <label className="text-sm text-gray-500">VAT Information*</label>
+                    <label className="text-sm text-gray-500">
+                      VAT Information*
+                    </label>
                     <div className="flex items-center gap-2 mt-2">
                       <input
                         type="checkbox"
@@ -240,7 +262,6 @@ function NewInvoicePage({ user }) {
                     </div>
                   </div>
                 </div>
-
 
                 <div className="border-t border-gray-200 mt-4 pt-4">
                   <div className="flex justify-between text-gray-600">

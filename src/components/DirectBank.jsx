@@ -33,7 +33,9 @@ function AddRecipientModal({ isOpen, onClose }) {
                 alt="Nigeria"
                 className="w-6 h-6 rounded-full object-cover"
               />
-              <span className="text-gray-700 font-medium">Nigerian Naira (₦)</span>
+              <span className="text-gray-700 font-medium">
+                Nigerian Naira (₦)
+              </span>
             </div>
             <ChevronDown className="w-5 h-5 text-gray-500" />
           </button>
@@ -181,7 +183,11 @@ function DirectBank({ user }) {
                 className="flex items-center gap-3 px-4 py-3 w-full text-left cursor-pointer rounded-lg transition"
                 onClick={() => console.log("Recipient clicked")}
               >
-                <img src="/src/assets/ngn.svg" alt="Nigeria" className="w-6 h-6" />
+                <img
+                  src="/src/assets/ngn.svg"
+                  alt="Nigeria"
+                  className="w-6 h-6"
+                />
                 <div className="flex flex-col">
                   <span className="font-semibold text-gray-800">
                     David Olumuyiwa

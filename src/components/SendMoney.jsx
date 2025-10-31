@@ -7,7 +7,7 @@ import { ArrowRight, Banknote, Smartphone } from "lucide-react";
 function SendMoney({ user }) {
   const [sidebarOpen] = useState(true);
   const [activeItem, setActiveItem] = useState("Convert Funds");
-  const [showQuickView, setShowQuickView] = useState(false); 
+  const [showQuickView, setShowQuickView] = useState(false);
 
   return (
     <div className="flex flex-col md:flex-row h-screen bg-gray-50">
@@ -66,7 +66,9 @@ function SendMoney({ user }) {
                 <img src="/src/assets/bank.svg" alt="" />
                 <div className="text-left">
                   <h3 className="font-semibold text-gray-800">Direct Bank</h3>
-                  <p className="text-sm text-gray-500">Direct transfer to bank</p>
+                  <p className="text-sm text-gray-500">
+                    Direct transfer to bank
+                  </p>
                 </div>
               </div>
               <ArrowRight className="w-5 h-5 text-gray-500" />

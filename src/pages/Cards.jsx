@@ -11,7 +11,6 @@ const Cards = () => {
 
   return (
     <div className="flex bg-gray-50 h-screen">
-
       <Sidebar
         activeItem={activeItem}
         setActiveItem={setActiveItem}
@@ -34,13 +33,17 @@ const Cards = () => {
                 onClick={() => setShowQuickAction(true)}
                 className="flex items-center gap-2 px-3 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition"
               >
-                <img src="/src/assets/chevron-down.svg" alt="Dropdown" className="w-4 h-4" />
+                <img
+                  src="/src/assets/chevron-down.svg"
+                  alt="Dropdown"
+                  className="w-4 h-4"
+                />
                 Quick Action
               </button>
 
               <div className="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full cursor-pointer hover:bg-gray-50 transition">
                 <img
-                  src="/src/assets/bell.svg"
+                  src="../assets/bell.svg"
                   alt="Notifications"
                   className="w-5 h-5"
                 />
@@ -52,7 +55,11 @@ const Cards = () => {
               className="md:hidden p-2 rounded-lg border border-gray-200"
               aria-label="Quick Action"
             >
-              <img src="/src/assets/chevron-down.svg" alt="Quick" className="w-5 h-5" />
+              <img
+                src="/src/assets/chevron-down.svg"
+                alt="Quick"
+                className="w-5 h-5"
+              />
             </button>
           </div>
         </header>
@@ -75,7 +82,11 @@ const Cards = () => {
                 className="flex items-center gap-2 px-6 py-3 bg-purple-600 text-white rounded-lg shadow-md hover:bg-purple-700 transition"
                 onClick={() => setShowNewCardModal(true)}
               >
-                <img src="/src/assets/cards.svg" alt="Add" className="w-5 h-5" />
+                <img
+                  src="/src/assets/cards.svg"
+                  alt="Add"
+                  className="w-5 h-5"
+                />
                 Create New Card
               </button>
             </div>

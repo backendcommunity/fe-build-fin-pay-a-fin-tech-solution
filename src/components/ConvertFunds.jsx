@@ -177,7 +177,7 @@ function ConvertFunds({ user }) {
             >
               Convert Funds <ArrowRight className="w-5 h-5" />
             </button>
-            
+
             <Link
               to="/dashboard"
               className="text-sm text-gray-400 mt-4 text-center cursor-pointer hover:underline block"

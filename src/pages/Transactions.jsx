@@ -22,15 +22,46 @@ const Transactions = () => {
 
   // ✅ Transactions list
   const transactions = [
-    { id: 1, type: "Credit", recipient: "John Doe", amount: 500, date: "2025-10-06", status: "Successful" },
-    { id: 2, type: "Debit", recipient: "Netflix", amount: 200, date: "2025-10-05", status: "Successful" },
-    { id: 3, type: "Credit", recipient: "Wallet Top-up", amount: 1000, date: "2025-10-04", status: "Pending" },
-    { id: 4, type: "Debit", recipient: "Amazon", amount: 150, date: "2025-10-03", status: "Failed" },
+    {
+      id: 1,
+      type: "Credit",
+      recipient: "John Doe",
+      amount: 500,
+      date: "2025-10-06",
+      status: "Successful",
+    },
+    {
+      id: 2,
+      type: "Debit",
+      recipient: "Netflix",
+      amount: 200,
+      date: "2025-10-05",
+      status: "Successful",
+    },
+    {
+      id: 3,
+      type: "Credit",
+      recipient: "Wallet Top-up",
+      amount: 1000,
+      date: "2025-10-04",
+      status: "Pending",
+    },
+    {
+      id: 4,
+      type: "Debit",
+      recipient: "Amazon",
+      amount: 150,
+      date: "2025-10-03",
+      status: "Failed",
+    },
   ];
 
   // ✅ Pagination logic
   const startIndex = (currentPage - 1) * itemsPerPage;
-  const currentTransactions = transactions.slice(startIndex, startIndex + itemsPerPage);
+  const currentTransactions = transactions.slice(
+    startIndex,
+    startIndex + itemsPerPage
+  );
 
   return (
     <div className="flex bg-gray-50 h-screen">
@@ -45,7 +76,6 @@ const Transactions = () => {
           sidebarOpen ? "md:ml-73" : "ml-0"
         }`}
       >
-
         <header className="flex items-center justify-between px-6 py-4 bg-white shadow-sm sticky top-0 z-10">
           <h1 className="text-xl md:text-3xl font-bold text-gray-500 text-center md:text-left flex-1">
             Transactions
@@ -70,17 +100,19 @@ const Transactions = () => {
               </div>
             </div>
 
-
             <button
               onClick={() => setShowQuickAction(true)}
               className="md:hidden p-2 rounded-lg border border-gray-200"
               aria-label="Quick Action"
             >
-              <img src="/src/assets/chevron-down.svg" alt="Quick" className="w-5 h-5" />
+              <img
+                src="/src/assets/chevron-down.svg"
+                alt="Quick"
+                className="w-5 h-5"
+              />
             </button>
           </div>
         </header>
-
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-2 p-4 border-b border-gray-100">
           <div className="relative w-full md:w-3/4">
@@ -96,7 +128,6 @@ const Transactions = () => {
             Filter
           </button>
         </div>
-
 
         <main className="p-6 bg-gray-50 flex-1 overflow-y-auto">
           <div className="bg-white shadow-md rounded-xl p-6">
@@ -165,7 +196,9 @@ const Transactions = () => {
 
               <div className="flex gap-2">
                 <button
-                  onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+                  onClick={() =>
+                    setCurrentPage((prev) => Math.max(prev - 1, 1))
+                  }
                   disabled={currentPage === 1}
                   className={`px-4 py-2 border rounded-lg text-sm font-medium transition ${
                     currentPage === 1
@@ -185,7 +218,8 @@ const Transactions = () => {
                     )
                   }
                   disabled={
-                    currentPage === Math.ceil(transactions.length / itemsPerPage)
+                    currentPage ===
+                    Math.ceil(transactions.length / itemsPerPage)
                   }
                   className={`px-4 py-2 border rounded-lg text-sm font-medium transition ${
                     currentPage ===

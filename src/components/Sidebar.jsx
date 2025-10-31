@@ -6,11 +6,19 @@ function Sidebar({ user }) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const menuItems = [
-    { name: "Dashboard", path: "/dashboard", icon: "/src/assets/dashboard.svg" },
+    {
+      name: "Dashboard",
+      path: "/dashboard",
+      icon: "/src/assets/dashboard.svg",
+    },
     { name: "Invoices", path: "/invoices", icon: "/src/assets/invoices.svg" },
     { name: "Cards", path: "/cards", icon: "/src/assets/cards.svg" },
     { name: "Wallet", path: "/wallet", icon: "/src/assets/wallets.svg" },
-    { name: "Transactions", path: "/transactions", icon: "/src/assets/transactions.svg" },
+    {
+      name: "Transactions",
+      path: "/transactions",
+      icon: "/src/assets/transactions.svg",
+    },
   ];
 
   return (

@@ -22,7 +22,6 @@ function NewInvoiceSuccess({ user }) {
           sidebarOpen ? "md:ml-70" : "ml-0"
         }`}
       >
-  
         <header className="flex items-center justify-between px-6 py-4 bg-white shadow-sm sticky top-0 z-10">
           <h1 className="text-xl md:text-3xl font-bold text-gray-500 text-center md:text-left flex-1">
             New Invoice

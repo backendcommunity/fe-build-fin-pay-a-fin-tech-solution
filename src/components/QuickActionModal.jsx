@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function QuickActionModal({ show, onClose }) {
-  if (!show) return null; 
+  if (!show) return null;
 
   return (
     <div
@@ -23,10 +23,14 @@ function QuickActionModal({ show, onClose }) {
         <div className="flex flex-col mt-8 divide-y divide-gray-300">
           <Link
             to="/send-money"
-            onClick={onClose} 
+            onClick={onClose}
             className="flex items-center gap-2 px-4 py-3 hover:bg-gray-100"
           >
-            <img src="/src/assets/Icon (5).svg" className="w-5 h-5" alt="Send Money" />
+            <img
+              src="/src/assets/Icon-5.svg"
+              className="w-5 h-5"
+              alt="Send Money"
+            />
             <span>Send Money</span>
           </Link>
 

@@ -5,7 +5,7 @@ import QuickActionModal from "../components/QuickActionModal";
 
 function InvoicePage({ user }) {
   const [sidebarOpen] = useState(true);
-  const [activeItem, setActiveItem] = useState("Invoices"); 
+  const [activeItem, setActiveItem] = useState("Invoices");
   const [showQuickView, setShowQuickView] = useState(false);
   const [activeTab, setActiveTab] = useState("All invoices");
 
