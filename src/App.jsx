@@ -6,7 +6,7 @@ import SignUp from "./pages/Auth/SignUp";
 import VerifyEmail from "./pages/Auth/VerifyEmail";
 import EnterCode from "./pages/Auth/EnterCode";
 import Verified from "./pages/Auth/Verified";
-import Login from "./pages/Auth/LogIn";
+import Login from "./pages/Auth/Login";
 
 // Protected Layout
 import Layout from "./components/Layout";
