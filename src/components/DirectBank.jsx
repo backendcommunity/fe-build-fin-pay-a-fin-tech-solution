@@ -18,7 +18,7 @@ function AddRecipientModal({ isOpen, onClose }) {
         </button>
         <h1 className="flex items-center gap-2 text-xl md:text-3xl font-bold text-gray-500 text-center md:text-left flex-1">
           Customer's Information
-          <img src="/src/assets/Button.svg" alt="Icon" className="w-20 h-20" />
+          <img src="../assets/Button.svg" alt="Icon" className="w-20 h-20" />
         </h1>
         <p className="mb-6 text-gray-700">Banking Information</p>
 
@@ -29,7 +29,7 @@ function AddRecipientModal({ isOpen, onClose }) {
           <button className="flex items-center justify-between w-full border border-gray-300 rounded-lg px-4 py-3 text-left hover:border-purple-400 transition">
             <div className="flex items-center gap-2">
               <img
-                src="/src/assets/ngn.svg"
+                src="../assets/ngn.svg"
                 alt="Nigeria"
                 className="w-6 h-6 rounded-full object-cover"
               />
@@ -129,12 +129,12 @@ function DirectBank({ user }) {
                 onClick={() => setShowQuickView(true)}
                 className="flex items-center gap-2 px-3 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50"
               >
-                <img src="/src/assets/chevron-down.svg" alt="Dropdown" />
+                <img src="../assets/chevron-down.svg" alt="Dropdown" />
                 Quick Action
               </button>
               <div className="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full cursor-pointer hover:bg-gray-50">
                 <img
-                  src="/src/assets/bell.svg"
+                  src="../assets/bell.svg"
                   alt="Notifications"
                   className="w-5 h-5"
                 />
@@ -184,7 +184,7 @@ function DirectBank({ user }) {
                 onClick={() => console.log("Recipient clicked")}
               >
                 <img
-                  src="/src/assets/ngn.svg"
+                  src="../assets/ngn.svg"
                   alt="Nigeria"
                   className="w-6 h-6"
                 />

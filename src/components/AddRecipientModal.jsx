@@ -25,7 +25,7 @@ function AddRecipientModal({
               <button className="flex items-center justify-between w-full border border-gray-300 rounded-lg px-4 py-3 text-left hover:border-purple-400 transition">
                 <div className="flex items-center gap-2">
                   <img
-                    src="/src/assets/ngn.svg"
+                    src="../assets/ngn.svg"
                     alt="Nigeria"
                     className="w-6 h-6 rounded-full object-cover"
                   />
@@ -95,7 +95,7 @@ function AddRecipientModal({
             <h1 className="flex items-center gap-2 text-xl font-bold text-gray-500 mb-2">
               Customer's Information
               <img
-                src="/src/assets/Button-1.svg"
+                src="../assets/Button-1.svg"
                 alt="Icon"
                 className="w-8 h-8"
               />
@@ -111,7 +111,7 @@ function AddRecipientModal({
                 <button className="flex items-center justify-between w-full border border-gray-300 rounded-lg px-4 py-3 text-left hover:border-purple-400 transition">
                   <div className="flex items-center gap-2">
                     <img
-                      src="/src/assets/ngn.svg"
+                      src="../assets/ngn.svg"
                       alt="Nigeria"
                       className="w-6 h-6 rounded-full object-cover"
                     />

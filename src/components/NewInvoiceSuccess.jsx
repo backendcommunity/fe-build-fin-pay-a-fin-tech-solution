@@ -33,13 +33,13 @@ function NewInvoiceSuccess({ user }) {
                 onClick={() => setShowQuickView(true)}
                 className="flex items-center gap-2 px-3 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition"
               >
-                <img src="/src/assets/chevron-down.svg" alt="Dropdown" />
+                <img src="../assets/chevron-down.svg" alt="Dropdown" />
                 Quick Action
               </button>
 
               <div className="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full cursor-pointer hover:bg-gray-50 transition">
                 <img
-                  src="/src/assets/bell.svg"
+                  src="../assets/bell.svg"
                   alt="Notifications"
                   className="w-5 h-5"
                 />
@@ -71,7 +71,7 @@ function NewInvoiceSuccess({ user }) {
                   className="flex items-center gap-2 px-4 py-3 hover:bg-gray-100"
                 >
                   <img
-                    src="/src/assets/Icon (5).svg"
+                    src="../assets/Icon (5).svg"
                     className="w-5 h-5"
                     alt="Send Money"
                   />
@@ -80,7 +80,7 @@ function NewInvoiceSuccess({ user }) {
 
                 <button className="flex items-center gap-2 px-4 py-3 hover:bg-gray-100">
                   <img
-                    src="/src/assets/switch-horizontal-02.svg"
+                    src="../assets/switch-horizontal-02.svg"
                     className="w-5 h-5"
                     alt="Fund Wallet"
                   />
@@ -93,7 +93,7 @@ function NewInvoiceSuccess({ user }) {
                   className="flex items-center gap-2 px-4 py-3 hover:bg-gray-100"
                 >
                   <img
-                    src="/src/assets/refresh-cw-03.svg"
+                    src="../assets/refresh-cw-03.svg"
                     className="w-5 h-5"
                     alt="Convert Funds"
                   />
@@ -102,7 +102,7 @@ function NewInvoiceSuccess({ user }) {
 
                 <button className="flex items-center gap-2 px-4 py-3 hover:bg-gray-100">
                   <img
-                    src="/src/assets/file-05 (2).svg"
+                    src="../assets/file-05 (2).svg"
                     className="w-5 h-5"
                     alt="Create Invoice"
                   />
@@ -122,7 +122,7 @@ function NewInvoiceSuccess({ user }) {
             <div className="h-12" />
 
             <img
-              src="/src/assets/check2.svg"
+              src="../assets/check2.svg"
               alt="Success"
               className="w-10 h-10 mb-6"
             />
@@ -136,7 +136,7 @@ function NewInvoiceSuccess({ user }) {
             </button>
 
             <button className="flex items-center justify-center gap-2 w-full mx-4 md:mx-0 border border-gray-300 py-3 rounded-lg font-semibold mb-6 bg-[#7105E9] hover:bg-purple-600 transition text-white">
-              <img src="/src/assets/invoices.svg" alt="Invoice" />
+              <img src="../assets/invoices.svg" alt="Invoice" />
               Create another Invoice
               <ArrowRight className="w-5 h-5" />
             </button>

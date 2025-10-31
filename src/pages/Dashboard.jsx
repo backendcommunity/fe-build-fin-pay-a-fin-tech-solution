@@ -63,11 +63,11 @@ function Dashboard() {
 
           <nav className="flex flex-col items-start p-6 gap-3 mt-8 text-lg w-full">
             {[
-              { name: "Dashboard", icon: "/src/assets/dashboard.svg" },
-              { name: "Invoices", icon: "/src/assets/invoices.svg" },
-              { name: "Cards", icon: "/src/assets/cards.svg" },
-              { name: "Wallets", icon: "/src/assets/wallets.svg" },
-              { name: "Transactions", icon: "/src/assets/transactions.svg" },
+              { name: "Dashboard", icon: "../assets/dashboard.svg" },
+              { name: "Invoices", icon: "../assets/invoices.svg" },
+              { name: "Cards", icon: "../assets/cards.svg" },
+              { name: "Wallets", icon: "../assets/wallets.svg" },
+              { name: "Transactions", icon: "../assets/transactions.svg" },
             ].map((item) => (
               <span
                 key={item.name}
@@ -88,7 +88,7 @@ function Dashboard() {
 
         <div className="flex items-center justify-between p-4 border-t border-purple-400">
           <img
-            src="/src/assets/user.png"
+            src="../assets/user.png"
             alt="User Profile"
             className="w-12 h-12 rounded-full border-2 border-white shadow-md"
           />
@@ -147,7 +147,7 @@ function Dashboard() {
                 }}
               >
                 <img
-                  src="/src/assets/Icon-5.svg"
+                  src="../assets/Icon-5.svg"
                   className="w-5 h-5"
                   alt="Send Money"
                 />
@@ -156,7 +156,7 @@ function Dashboard() {
 
               <button className="flex items-center gap-2 px-4 py-3 hover:bg-gray-100">
                 <img
-                  src="/src/assets/switch-horizontal-02.svg"
+                  src="../assets/switch-horizontal-02.svg"
                   className="w-5 h-5"
                 />
                 <span>Fund Wallet</span>
@@ -166,14 +166,14 @@ function Dashboard() {
                 className="flex items-center gap-2 px-4 py-3 hover:bg-gray-100"
               >
                 <img
-                  src="/src/assets/refresh-cw-03.svg"
+                  src="../assets/refresh-cw-03.svg"
                   className="w-5 h-5"
                   alt="Convert Funds"
                 />
                 <span>Convert Funds</span>
               </Link>
               <button className="flex items-center gap-2 px-4 py-3 hover:bg-gray-100">
-                <img src="/src/assets/file-05-2.svg" className="w-5 h-5" />
+                <img src="../assets/file-05-2.svg" className="w-5 h-5" />
                 <span>Create Invoice</span>
               </button>
             </div>
@@ -207,7 +207,7 @@ function Dashboard() {
                   <span>David Muyiwa</span>
                   <button onClick={() => handleCopy("David Muyiwa")}>
                     <img
-                      src="/src/assets/copy.svg"
+                      src="../assets/copy.svg"
                       alt="Copy"
                       className="w-4 h-4"
                     />
@@ -221,7 +221,7 @@ function Dashboard() {
                   <span>First Bank of Nigeria</span>
                   <button onClick={() => handleCopy("First Bank of Nigeria")}>
                     <img
-                      src="/src/assets/copy.svg"
+                      src="../assets/copy.svg"
                       alt="Copy"
                       className="w-4 h-4"
                     />
@@ -235,7 +235,7 @@ function Dashboard() {
                   <span>1234567890</span>
                   <button onClick={() => handleCopy("1234567890")}>
                     <img
-                      src="/src/assets/copy.svg"
+                      src="../assets/copy.svg"
                       alt="Copy"
                       className="w-4 h-4"
                     />
@@ -249,7 +249,7 @@ function Dashboard() {
                   <span>987654321</span>
                   <button onClick={() => handleCopy("987654321")}>
                     <img
-                      src="/src/assets/copy.svg"
+                      src="../assets/copy.svg"
                       alt="Copy"
                       className="w-4 h-4"
                     />
@@ -263,7 +263,7 @@ function Dashboard() {
                   <span>Savings</span>
                   <button onClick={() => handleCopy("Savings")}>
                     <img
-                      src="/src/assets/copy.svg"
+                      src="../assets/copy.svg"
                       alt="Copy"
                       className="w-4 h-4"
                     />
@@ -277,7 +277,7 @@ function Dashboard() {
                   <span>123 Lagos Street, NG</span>
                   <button onClick={() => handleCopy("123 Lagos Street, NG")}>
                     <img
-                      src="/src/assets/copy.svg"
+                      src="../assets/copy.svg"
                       alt="Copy"
                       className="w-4 h-4"
                     />
@@ -300,17 +300,13 @@ function Dashboard() {
                 }
                 className="flex items-center gap-2 px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300"
               >
-                <img
-                  src="/src/assets/copy.svg"
-                  alt="Copy"
-                  className="w-4 h-4"
-                />
+                <img src="../assets/copy.svg" alt="Copy" className="w-4 h-4" />
                 <span>Copy details as text</span>
               </button>
 
               <button className="flex items-center gap-2 px-4 py-2 bg-[#7105E9] text-white rounded-lg hover:bg-[#5804b6]">
                 <img
-                  src="/src/assets/invoices.svg"
+                  src="../assets/invoices.svg"
                   alt="Copy"
                   className="w-4 h-4"
                 />
@@ -341,12 +337,12 @@ function Dashboard() {
                 onClick={() => setShowQuickView(true)}
                 className="flex items-center gap-2 px-3 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50"
               >
-                <img src="/src/assets/chevron-down.svg" alt="Dropdown" />
+                <img src="../assets/chevron-down.svg" alt="Dropdown" />
                 Quick Action
               </button>
               <div className="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full cursor-pointer hover:bg-gray-50">
                 <img
-                  src="/src/assets/bell.svg"
+                  src="../assets/bell.svg"
                   alt="Notifications"
                   className="w-5 h-5"
                 />
@@ -366,11 +362,11 @@ function Dashboard() {
           <div className="md:hidden bg-white border-b border-gray-200 p-4 space-y-3">
             <button className="w-full flex items-center justify-between px-3 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50">
               Quick Action
-              <img src="/src/assets/dropdown.svg" alt="Dropdown" />
+              <img src="../assets/dropdown.svg" alt="Dropdown" />
             </button>
             <div className="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full cursor-pointer hover:bg-gray-50">
               <img
-                src="/src/assets/bell.svg"
+                src="../assets/bell.svg"
                 alt="Notifications"
                 className="w-5 h-5"
               />
@@ -393,7 +389,7 @@ function Dashboard() {
               >
                 <div className="flex items-center gap-2 text-gray-600 mb-2">
                   <img
-                    src="/src/assets/allBalance.svg"
+                    src="../assets/allBalance.svg"
                     alt="wallet"
                     className="w-10 h-10"
                   />
@@ -412,9 +408,7 @@ function Dashboard() {
                 >
                   Wallet Balance
                   <img
-                    src={`/src/assets/${
-                      showBalance ? "eye.svg" : "eye-off.svg"
-                    }`}
+                    src={`../assets/${showBalance ? "eye.svg" : "eye-off.svg"}`}
                     alt="Toggle"
                     className="w-3 h-3"
                   />
@@ -423,11 +417,7 @@ function Dashboard() {
 
               <div className="bg-gray-50 rounded-lg p-4 shadow flex flex-col items-start transition-transform transform hover:scale-105">
                 <div className="flex items-center gap-2 text-gray-600 pb-2 mb-2 border-b border-gray-300 w-full">
-                  <img
-                    src="/src/assets/gbp.svg"
-                    alt="GBP"
-                    className="w-9 h-9"
-                  />
+                  <img src="../assets/gbp.svg" alt="GBP" className="w-9 h-9" />
                   <span className="font-medium">USD</span>
                 </div>
                 <p className="text-2xl font-bold text-[#222845]">$500.00</p>
@@ -435,11 +425,7 @@ function Dashboard() {
 
               <div className="bg-gray-50 rounded-lg p-4 shadow flex flex-col items-start transition-transform transform hover:scale-105">
                 <div className="flex items-center gap-2 text-gray-600 pb-2 mb-2 border-b border-gray-300 w-full">
-                  <img
-                    src="/src/assets/gbp.svg"
-                    alt="GBP"
-                    className="w-9 h-9"
-                  />
+                  <img src="../assets/gbp.svg" alt="GBP" className="w-9 h-9" />
                   <span className="font-medium">GBP</span>
                 </div>
                 <p className="text-2xl font-bold text-[#222845]">£2,200.00</p>
@@ -447,11 +433,7 @@ function Dashboard() {
 
               <div className="bg-gray-50 rounded-lg p-4 shadow flex flex-col items-start transition-transform transform hover:scale-105">
                 <div className="flex items-center gap-2 text-gray-600 pb-2 mb-2 border-b border-gray-300 w-full">
-                  <img
-                    src="/src/assets/eur.svg"
-                    alt="EUR"
-                    className="w-9 h-9"
-                  />
+                  <img src="../assets/eur.svg" alt="EUR" className="w-9 h-9" />
                   <span className="font-medium">EUR</span>
                 </div>
                 <p className="text-2xl font-bold text-[#222845]">€5,700.00</p>
@@ -459,11 +441,7 @@ function Dashboard() {
 
               <div className="bg-gray-50 rounded-lg p-4 shadow flex flex-col items-start transition-transform transform hover:scale-105">
                 <div className="flex items-center gap-2 text-gray-600 pb-2 mb-2 border-b border-gray-300 w-full">
-                  <img
-                    src="/src/assets/ngn.svg"
-                    alt="NGN"
-                    className="w-9 h-9"
-                  />
+                  <img src="../assets/ngn.svg" alt="NGN" className="w-9 h-9" />
                   <span className="font-medium">NGN</span>
                 </div>
                 <p className="text-2xl font-bold text-[#222845]">₦2,200,000</p>
@@ -487,11 +465,7 @@ function Dashboard() {
                   border: "1px solid #172590",
                 }}
               >
-                <img
-                  src="/src/assets/send.svg"
-                  alt="Send"
-                  className="w-6 h-6"
-                />
+                <img src="../assets/send.svg" alt="Send" className="w-6 h-6" />
                 <span className="font-medium">Send Money</span>
               </div>
 
@@ -504,7 +478,7 @@ function Dashboard() {
                 }}
               >
                 <img
-                  src="/src/assets/transaction.svg"
+                  src="../assets/transaction.svg"
                   alt="Deposit"
                   className="w-6 h-6"
                 />
@@ -520,7 +494,7 @@ function Dashboard() {
                 }}
               >
                 <img
-                  src="/src/assets/invoice.svg"
+                  src="../assets/invoice.svg"
                   alt="Withdraw"
                   className="w-6 h-6"
                 />
@@ -539,11 +513,7 @@ function Dashboard() {
 
               <div className="p-6">
                 <div className="flex items-center gap-3 p-3 border rounded-lg mb-3">
-                  <img
-                    src="/src/assets/usd.svg"
-                    alt="USD"
-                    className="w-6 h-6"
-                  />
+                  <img src="../assets/usd.svg" alt="USD" className="w-6 h-6" />
                   <div>
                     <p className="font-medium text-[#222845]">US Dollar</p>
                     <p className="text-sm text-gray-500">
@@ -555,7 +525,7 @@ function Dashboard() {
 
                 <div className="flex items-center gap-3 p-3 border rounded-lg mb-3">
                   <img
-                    src="/src/assets/gbp.svg"
+                    src="../assets/gbp.svg"
                     alt="GBP"
                     className="w-6 h-6"
                     nb
@@ -569,11 +539,7 @@ function Dashboard() {
                 </div>
 
                 <div className="flex items-center gap-3 p-3 border rounded-lg">
-                  <img
-                    src="/src/assets/eur.svg"
-                    alt="EUR"
-                    className="w-6 h-6"
-                  />
+                  <img src="../assets/eur.svg" alt="EUR" className="w-6 h-6" />
                   <div>
                     <p className="font-medium text-[#222845]">Euros</p>
                     <p className="text-sm text-gray-500">
@@ -615,7 +581,7 @@ function Dashboard() {
 
                 <button className="mt-4 flex items-center justify-center gap-2 hover:bg-purple-600 bg-[#7105E9] text-white px-4 py-2 rounded-lg shadow hover:bg-[#1a1f36] transition">
                   <img
-                    src="/src/assets/invoices.svg"
+                    src="../assets/invoices.svg"
                     alt="Add"
                     className="w-5 h-5"
                   />
@@ -668,11 +634,7 @@ function Dashboard() {
               </div>
 
               <div className="p-6 flex flex-col items-center justify-center  flex-grow">
-                <img
-                  src="/src/assets/icon-4.svg"
-                  alt="EUR"
-                  className="w-8 h-8"
-                />
+                <img src="../assets/icon-4.svg" alt="EUR" className="w-8 h-8" />
 
                 <h2 className="text-lg font-bold text-gray-600">
                   No card yet?
@@ -682,7 +644,7 @@ function Dashboard() {
                 </p>
                 <button className="flex items-center space-x-2 bg-[#7105E9] text-white px-4 py-2 rounded-lg hover:bg-purple-600">
                   <img
-                    src="/src/assets/cards.svg"
+                    src="../assets/cards.svg"
                     alt="EUR"
                     className="w-4 h-4 text-white"
                   />

@@ -27,7 +27,7 @@ function QuickActionModal({ show, onClose }) {
             className="flex items-center gap-2 px-4 py-3 hover:bg-gray-100"
           >
             <img
-              src="/src/assets/Icon-5.svg"
+              src="../assets/Icon-5.svg"
               className="w-5 h-5"
               alt="Send Money"
             />
@@ -36,7 +36,7 @@ function QuickActionModal({ show, onClose }) {
 
           <button className="flex items-center gap-2 px-4 py-3 hover:bg-gray-100">
             <img
-              src="/src/assets/switch-horizontal-02.svg"
+              src="../assets/switch-horizontal-02.svg"
               className="w-5 h-5"
               alt="Fund Wallet"
             />
@@ -49,7 +49,7 @@ function QuickActionModal({ show, onClose }) {
             className="flex items-center gap-2 px-4 py-3 hover:bg-gray-100"
           >
             <img
-              src="/src/assets/refresh-cw-03.svg"
+              src="../assets/refresh-cw-03.svg"
               className="w-5 h-5"
               alt="Convert Funds"
             />
@@ -58,7 +58,7 @@ function QuickActionModal({ show, onClose }) {
 
           <button className="flex items-center gap-2 px-4 py-3 hover:bg-gray-100">
             <img
-              src="/src/assets/file-05 (2).svg"
+              src="../assets/file-05 (2).svg"
               className="w-5 h-5"
               alt="Create Invoice"
             />

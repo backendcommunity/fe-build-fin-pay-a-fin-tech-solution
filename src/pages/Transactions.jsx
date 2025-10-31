@@ -87,13 +87,13 @@ const Transactions = () => {
                 onClick={() => setShowQuickAction(true)}
                 className="flex items-center gap-2 px-3 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition"
               >
-                <img src="/src/assets/chevron-down.svg" alt="Dropdown" />
+                <img src="../assets/chevron-down.svg" alt="Dropdown" />
                 Quick Action
               </button>
 
               <div className="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full cursor-pointer hover:bg-gray-50 transition">
                 <img
-                  src="/src/assets/bell.svg"
+                  src="../assets/bell.svg"
                   alt="Notifications"
                   className="w-5 h-5"
                 />
@@ -106,7 +106,7 @@ const Transactions = () => {
               aria-label="Quick Action"
             >
               <img
-                src="/src/assets/chevron-down.svg"
+                src="../assets/chevron-down.svg"
                 alt="Quick"
                 className="w-5 h-5"
               />

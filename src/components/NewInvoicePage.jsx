@@ -20,7 +20,7 @@ function NewInvoicePage({ user }) {
     code: "USD",
     name: "US Dollar",
     symbol: "$",
-    flag: "/src/assets/usd.svg",
+    flag: "../assets/usd.svg",
   });
 
   const customers = [
@@ -36,20 +36,20 @@ function NewInvoicePage({ user }) {
       code: "USD",
       name: "US Dollar",
       symbol: "$",
-      flag: "/src/assets/usd.svg",
+      flag: "../assets/usd.svg",
     },
-    { code: "EUR", name: "Euro", symbol: "€", flag: "/src/assets/eur.svg" },
+    { code: "EUR", name: "Euro", symbol: "€", flag: "../assets/eur.svg" },
     {
       code: "GBP",
       name: "British Pound",
       symbol: "£",
-      flag: "/src/assets/gbp.svg",
+      flag: "../assets/gbp.svg",
     },
     {
       code: "NGN",
       name: "Nigerian Naira",
       symbol: "₦",
-      flag: "/src/assets/ngn.svg",
+      flag: "../assets/ngn.svg",
     },
   ];
 
@@ -99,13 +99,13 @@ function NewInvoicePage({ user }) {
                 onClick={() => setShowQuickView(true)}
                 className="flex items-center gap-2 px-3 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition"
               >
-                <img src="/src/assets/chevron-down.svg" alt="Dropdown" />
+                <img src="../assets/chevron-down.svg" alt="Dropdown" />
                 Quick Action
               </button>
 
               <div className="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full cursor-pointer hover:bg-gray-50 transition">
                 <img
-                  src="/src/assets/bell.svg"
+                  src="../assets/bell.svg"
                   alt="Notifications"
                   className="w-5 h-5"
                 />

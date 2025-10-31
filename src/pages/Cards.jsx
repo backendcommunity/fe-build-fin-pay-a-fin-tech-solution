@@ -34,7 +34,7 @@ const Cards = () => {
                 className="flex items-center gap-2 px-3 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition"
               >
                 <img
-                  src="/src/assets/chevron-down.svg"
+                  src="../assets/chevron-down.svg"
                   alt="Dropdown"
                   className="w-4 h-4"
                 />
@@ -56,7 +56,7 @@ const Cards = () => {
               aria-label="Quick Action"
             >
               <img
-                src="/src/assets/chevron-down.svg"
+                src="../assets/chevron-down.svg"
                 alt="Quick"
                 className="w-5 h-5"
               />
@@ -71,7 +71,7 @@ const Cards = () => {
 
             <div className="text-center">
               <img
-                src="/src/assets/cardImg.svg"
+                src="../assets/cardImg.svg"
                 alt="Card"
                 className="w-full rounded-xl object-cover"
               />
@@ -82,11 +82,7 @@ const Cards = () => {
                 className="flex items-center gap-2 px-6 py-3 bg-purple-600 text-white rounded-lg shadow-md hover:bg-purple-700 transition"
                 onClick={() => setShowNewCardModal(true)}
               >
-                <img
-                  src="/src/assets/cards.svg"
-                  alt="Add"
-                  className="w-5 h-5"
-                />
+                <img src="../assets/cards.svg" alt="Add" className="w-5 h-5" />
                 Create New Card
               </button>
             </div>

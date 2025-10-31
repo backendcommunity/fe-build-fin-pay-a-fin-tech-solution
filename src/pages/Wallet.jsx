@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import AddRecipientModal from "../components/AddRecipientModal";
 import QuickActionModal from "../components/QuickActionModal";
-import sendIcon from "/src/assets/icon-5.svg";
-import convertIcon from "/src/assets/switch-horizontal-02.svg";
+import sendIcon from "../assets/icon-5.svg";
+import convertIcon from "../assets/switch-horizontal-02.svg";
 
 import {
   ArrowDown,
@@ -31,7 +31,7 @@ const Wallet = () => {
     country: "United States",
     currency: "USD",
     symbol: "$",
-    flag: "/src/assets/usd.svg",
+    flag: "../assets/usd.svg",
     balance: 2450.75,
     receivingAccount: {
       holder: "David Olumuyiwa",
@@ -84,19 +84,19 @@ const Wallet = () => {
       country: "United States",
       currency: "USD",
       symbol: "$",
-      flag: "/src/assets/usd.svg",
+      flag: "../assets/usd.svg",
     },
     {
       country: "United Kingdom",
       currency: "GBP",
       symbol: "£",
-      flag: "/src/assets/gbp.svg",
+      flag: "../assets/gbp.svg",
     },
     {
       country: "European Union",
       currency: "EUR",
       symbol: "€",
-      flag: "/src/assets/eur.svg",
+      flag: "../assets/eur.svg",
     },
   ];
 
@@ -141,13 +141,13 @@ const Wallet = () => {
                 onClick={() => setShowQuickView(true)}
                 className="flex items-center gap-2 px-3 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition"
               >
-                <img src="/src/assets/chevron-down.svg" alt="Dropdown" />
+                <img src="../assets/chevron-down.svg" alt="Dropdown" />
                 Quick Action
               </button>
 
               <div className="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full cursor-pointer hover:bg-gray-50 transition">
                 <img
-                  src="/src/assets/bell.svg"
+                  src="../assets/bell.svg"
                   alt="Notifications"
                   className="w-5 h-5"
                 />
@@ -389,7 +389,7 @@ const Wallet = () => {
                       <span>David Muyiwa</span>
                       <button onClick={() => handleCopy("David Muyiwa")}>
                         <img
-                          src="/src/assets/copy.svg"
+                          src="../assets/copy.svg"
                           alt="Copy"
                           className="w-4 h-4"
                         />
@@ -405,7 +405,7 @@ const Wallet = () => {
                         onClick={() => handleCopy("First Bank of Nigeria")}
                       >
                         <img
-                          src="/src/assets/copy.svg"
+                          src="../assets/copy.svg"
                           alt="Copy"
                           className="w-4 h-4"
                         />
@@ -421,7 +421,7 @@ const Wallet = () => {
                       <span>1234567890</span>
                       <button onClick={() => handleCopy("1234567890")}>
                         <img
-                          src="/src/assets/copy.svg"
+                          src="../assets/copy.svg"
                           alt="Copy"
                           className="w-4 h-4"
                         />
@@ -437,7 +437,7 @@ const Wallet = () => {
                       <span>987654321</span>
                       <button onClick={() => handleCopy("987654321")}>
                         <img
-                          src="/src/assets/copy.svg"
+                          src="../assets/copy.svg"
                           alt="Copy"
                           className="w-4 h-4"
                         />
@@ -451,7 +451,7 @@ const Wallet = () => {
                       <span>Savings</span>
                       <button onClick={() => handleCopy("Savings")}>
                         <img
-                          src="/src/assets/copy.svg"
+                          src="../assets/copy.svg"
                           alt="Copy"
                           className="w-4 h-4"
                         />
@@ -467,7 +467,7 @@ const Wallet = () => {
                         onClick={() => handleCopy("123 Lagos Street, NG")}
                       >
                         <img
-                          src="/src/assets/copy.svg"
+                          src="../assets/copy.svg"
                           alt="Copy"
                           className="w-4 h-4"
                         />
@@ -492,7 +492,7 @@ const Wallet = () => {
                     className="flex items-center gap-2 px-4 py-2 bg-gray-200 rounded-lg hover:bg-gray-300"
                   >
                     <img
-                      src="/src/assets/copy.svg"
+                      src="../assets/copy.svg"
                       alt="Copy"
                       className="w-4 h-4"
                     />
@@ -501,7 +501,7 @@ const Wallet = () => {
 
                   <button className="flex items-center gap-2 px-4 py-2 bg-[#7105E9] text-white rounded-lg hover:bg-[#5804b6]">
                     <img
-                      src="/src/assets/invoices.svg"
+                      src="../assets/invoices.svg"
                       alt="Copy"
                       className="w-4 h-4"
                     />

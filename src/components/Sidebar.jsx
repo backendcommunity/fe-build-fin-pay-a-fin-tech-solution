@@ -9,15 +9,15 @@ function Sidebar({ user }) {
     {
       name: "Dashboard",
       path: "/dashboard",
-      icon: "/src/assets/dashboard.svg",
+      icon: "../assets/dashboard.svg",
     },
-    { name: "Invoices", path: "/invoices", icon: "/src/assets/invoices.svg" },
-    { name: "Cards", path: "/cards", icon: "/src/assets/cards.svg" },
-    { name: "Wallet", path: "/wallet", icon: "/src/assets/wallets.svg" },
+    { name: "Invoices", path: "/invoices", icon: "../assets/invoices.svg" },
+    { name: "Cards", path: "/cards", icon: "../assets/cards.svg" },
+    { name: "Wallet", path: "/wallet", icon: "../assets/wallets.svg" },
     {
       name: "Transactions",
       path: "/transactions",
-      icon: "/src/assets/transactions.svg",
+      icon: "../assets/transactions.svg",
     },
   ];
 
@@ -63,7 +63,7 @@ function Sidebar({ user }) {
 
         <div className="flex items-center justify-between p-4 border-t border-purple-400">
           <img
-            src="/src/assets/profile.jpeg"
+            src="../assets/profile.jpeg"
             alt="User Profile"
             className="w-12 h-12 rounded-full border-2 border-white shadow-md"
           />
